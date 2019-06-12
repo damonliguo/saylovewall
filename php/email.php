@@ -28,7 +28,7 @@ class sendEmail
         $mail = new PHPMailer;
         //$mail->SMTPDebug = 3;                               // Enable verbose debug output
         $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.qq.com;';  // Specify main and backup SMTP servers
+        $mail->Host = config::$email_config['SMTP_SERVER'];  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;
         $mail->CharSet = "utf-8";                               // Enable SMTP authentication
         $mail->Username = config::$email_config['SMTP_USERNAME'];                 // SMTP username
