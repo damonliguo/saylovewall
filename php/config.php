@@ -25,6 +25,8 @@ class config
 
     // 邮件发送配置
     public static $email_config = [
+        // 邮箱SMTP地址，默认为QQ的，可以修改为其他SMTP服务
+        "SMTP_SERVER" => "smtp.qq.com",
         // 邮件的主题名字
         "SMTP_NAME" => "广西科技大学2016表白墙",
         // SMTP 用户名，如果是QQ邮箱申请的则填写QQ邮箱
