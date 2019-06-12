@@ -63,6 +63,10 @@ https://pingxonline.com/
 ## 支持
 基于jQuery Mobile开发。
 
+## 常见问题  
+1. 发送三条表白后，无法再发送  
+解决方法：修改php/config.php里面的max_submit_post配置项为其他数字，原理是利用session来限制发表白的数据量，默认是3条。
+
 ## 界面
 
 ![](https://pingxonline.com/wp-content/uploads/2017/08/1.png)
